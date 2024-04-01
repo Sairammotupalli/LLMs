@@ -8,13 +8,13 @@ class Solution {
                 str+=s.charAt(i);
             }
         }
-        int left=0,right=str.length()-1;
-        while(left<right){
-            if(str.charAt(left)!=str.charAt(right)){
+        int l=0,r=str.length()-1;
+        while(l<r){
+            if(str.charAt(l)!=str.charAt(r)){
                 return false;
             }
-            left++;
-            right--;
+            l++;
+            r--;
         }
         return true;
     }
