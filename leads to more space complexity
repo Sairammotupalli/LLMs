@@ -1,14 +1,17 @@
-class Solution {
-    public void reverseString(char[] s) {
-int a=0;
-int b=s.length-1;
-while(a<b)
-{
-char temp=s[a];
-s[a]=s[b];
-s[b]=temp;
-a=a+1;
-b=b-1;
-}
+class ReverseString {
+    public static void reverse(char[] s) {
+        char[] arr=new char[s.length];
+        int j=0;
+        for(int i=s.length-1;i>=0;i--){
+            arr[i]=s[j];
+            j++;
+        }
+            for(int k=0;k<arr.length;k++){
+                System.out.print(arr[k]);
+            }
+    }
+    public static void main(String args[]){
+        char[] s={'a','e','i','o','u'};
+        reverse(s);
     }
 }
