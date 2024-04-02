@@ -1,1 +1,22 @@
+class ReverseString {
+    public static void reverse(char[] s) {
+    int a=0;
+    int b=s.length-1;
+    while(a<b)
+    {
+    char temp=s[a];
+    s[a]=s[b];
+    s[b]=temp;
+    a=a+1;
+    b=b-1;
+    }
+    for(int k=0;k<s.length;k++){
+        System.out.print(s[k]);
+    }
+        }
+        public static void main(String args[]){
+            char[] s={'a','e','i','o','u'};
+            reverse(s);
 
+        }
+    }
